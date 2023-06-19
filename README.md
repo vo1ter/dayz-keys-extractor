@@ -37,5 +37,5 @@
 
 1. Drop the script either into a folder with your mods or somewhere else.
 2. Start the script using python `auto-keys-extractor.py`
-3.1. If you drop it in a folder with mods, press "-" when the script asks for the mods folder path. 
-3.2. If you drop it somewhere else, manually type or paste a folder path (don't use any symbols like ", &, etc.).
+3. If you drop it in a folder with mods, press "-" when the script asks for the mods folder path. 
+4. If you drop it somewhere else, manually type or paste a folder path (don't use any symbols like ", &, etc.).
