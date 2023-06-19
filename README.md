@@ -11,7 +11,6 @@
   |----------------|---------|
   |     3.10.6     | ✅ Pass |
 
-  <br>
 </details>
   
 <details>
@@ -22,7 +21,6 @@
   |--------------|----|----------|--------|
   | Windows 10 Pro | 22H2 | 19045.3086 | ✅ Pass |
   
-  <br>
 </details>
 
 <details>
@@ -33,7 +31,6 @@
   |------|-----------|-----------------------|
   | Ubuntu | 20.04.5 LTS | ⏰ Waiting for results... |
   
-  <br>
 </details>
 
 # Installation & Usage
