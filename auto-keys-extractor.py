@@ -47,11 +47,12 @@ userChoise = input("Do you want to create list with all mods? (y/n) ")
 if(userChoise.lower() == "y" or userChoise.lower() == "yes"):
     modsList = ""
     for i in range(0, len(homeDirContents)):
-        modsList += homeDirContents[i] + ";"
+        if(homeDirContents[i].startswith("@") == True):
+            modsList += homeDirContents[i] + ";"
     print("\nMods list:\n" + modsList + "\n")
 
 if(debug == 1):
-    __debugLog__ = "\n\n\n---------------DEBUG---------------\n"
+    __debugLog__ = "---------------DEBUG---------------\n\n"
     print("\n\n\n---------------DEBUG---------------\n")
     for name in dir():
         if not name.startswith('__'):
@@ -59,10 +60,10 @@ if(debug == 1):
     __debugLog__ += "__file__ = " + str(__file__)
     print(__debugLog__)
     print("\n-------------END DEBUG-------------\n\n\n")
-    __debugLog__ += "\n-------------END DEBUG-------------\n\n\n"
-    if os.path.exists(homeDir + "debug.txt"):
-        os.remove(homeDir + "debug.txt")
-    debugFile = open(homeDir + "debug.txt", "w")
+    __debugLog__ += "\n\n-------------END DEBUG-------------"
+    if os.path.exists(homeDir + "keysExtractorDebug.txt"):
+        os.remove(homeDir + "keysExtractorkeysExtractorDebug.txt")
+    debugFile = open(homeDir + "keysExtractorDebug.txt", "w")
     debugFile.write(__debugLog__)
     debugFile.close()
 os.system("pause")
